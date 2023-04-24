@@ -3,6 +3,8 @@ title: "Unidad 1 y 2"
 author: "Andrade Daniel; Nathalia Morocho"
 format: html
 editor: visual
+params:
+  data: "./datos"
 ---
 
 # **Introducción al aprendizaje automático**
@@ -385,12 +387,11 @@ plot(x= usedcars$mileage, y=usedcars$price,
      ylab = "Used Car Price ($)")
 ```
 
-
 install.packages("gmodels")
+
 ```{r}
 library(gmodels)
 ```
-
 
 ```{r}
 usedcars$conservative <- usedcars$color %in% c("Black","Gray","Silver","White")
@@ -403,3 +404,4 @@ table(usedcars$conservative)
 ```{r}
 CrossTable(x=usedcars$model, y=usedcars$conservative)
 ```
+
