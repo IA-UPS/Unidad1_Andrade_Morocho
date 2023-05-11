@@ -404,4 +404,3 @@ table(usedcars$conservative)
 ```{r}
 CrossTable(x=usedcars$model, y=usedcars$conservative)
 ```
-
